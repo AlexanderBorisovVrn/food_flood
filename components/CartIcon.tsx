@@ -1,22 +1,17 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const CartIcon = ({
-  uppercase,
-  bold,
-}: {
-  uppercase?: boolean;
-  bold?: boolean;
-}) => {
-  let style = "flex justify-around ";
-  let curStyle = uppercase ? (style += "uppercase") : style;
-  curStyle = bold ? (curStyle += "font-bold") : style;
+const CartIcon = ({ up, uppercase }: { up?: boolean; uppercase?: boolean }) => {
+  let style = "flex items-center justify-center gap-[3px] hover:opacity-90 ";
+  style = up ? style + " " + "hover:txt-up" : style;
+  style = uppercase ? style + " " + "uppercase" : style;
+
   return (
-    <button className={curStyle}>
+    <button className={style}>
+      <ShoppingCartIcon />
+      <div>Корзина</div>
       <div>
-        <ShoppingCartIcon />
+        <sup className="border rounded-full p-1 px-2  text-[10px] md:text-xs bg-third text-white">31</sup>
       </div>
-      <div className="mx-2">Cart</div>
-      <div>(3)</div>
     </button>
   );
 };
