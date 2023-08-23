@@ -1,23 +1,22 @@
 "use client";
-
+import Image from 'next/image'
 import { useEffect, useState } from "react";
 import { alegreya } from "@/app/layout";
 
 const data = [
   {
     id: 1,
-    title: "Мы обещаем только лучшее!",
+    title: "Мир простых и быстрых удовольствий!",
     img: "/slider/slider.jpg",
   },
   {
     id: 2,
-    title: '"Быстро, вкусно, с любовью - наш рецепт успеха!"',
+    title: "Удовольствие не только быстро, но и вкусно!",
     img: "/slider/slider2.jpg",
   },
   {
     id: 3,
-    title:
-      "Покори свои гастрономические потребности с нашими креативными блюдами!",
+    title: "FastFlood делает жизнь вкуснее!",
     img: "/slider/slider3.jpg",
   },
 ];
@@ -34,30 +33,32 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="felx flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)]">
-      {/* LEFT SIDE */}
-      <div className="h-1/2  center flex-col gap-8 text-primary font-bold">
+    <section className="flex flex-col md:flex-row h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] bg-gray ">
+      {/*LEFT SIDE */}
+      <div className="h-1/2 w-full md:w-1/2 md:h-full center flex-col gap-8 text-primary font-bold">
         <h1
           className={
-            "text-5xl md:text-6xl xl:text-7xl uppercase p-4 text-center " +
+            "text-3xl md:text-5xl xl:text-6xl uppercase p-4 md:p-8 text-center  " +
             alegreya.className
           }
         >
           {data[currentSlide].title}
         </h1>
-        <button className="bg-third p-4 px-8 rounded-md text-white">
+        <button className="bg-third p-4 px-8 md:text-xl rounded-sm text-white shadow-bx">
           Заказать сейчас
         </button>
       </div>
       {/* RIGHT SIDE */}
-      <div className="h-1/2 relative">
-        <img
+      <div className="h-1/2 w-full md:w-1/2 md:h-auto relative">
+        <Image
           src={data[currentSlide].img}
           alt=""
-          className="w-full h-full object-cover"
+          fill
+          sizes='100vw,100vh'
+          className="object-cover"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
