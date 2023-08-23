@@ -9,22 +9,22 @@ const NavBar = () => {
   const user = false;
   const linkStyle = "hover:txt-up";
   return (
-    <nav className="w-full h-12 text-third uppercase md:h-20 lg:text-xl flex justify-between items-center p-1 lg:px-6 px-4 border-b-2 border-dark bg-white lg:bg-logo bg-no-repeat bg-center">
+    <nav className="w-full h-12 text-dark capitalize md:h-20 lg:text-xl flex justify-between items-center p-1 lg:px-6 px-4 border-b-2 border-dark bg-white lg:bg-logo bg-no-repeat bg-center">
       {/* LEFT LINKS */}
       <div className="hidden md:flex gap-3   font-bold">
         <Link href={"/"} className={linkStyle}>
           Главная
         </Link>
-        <Link href={"/"} className={linkStyle}>
+        <Link href={"/menu"} className={linkStyle}>
           Меню
         </Link>
-        <Link href={"/"} className={linkStyle}>
+        <Link href={"/contact"} className={linkStyle}>
           Контакты
         </Link>
       </div>
       {/* MOBILE LOGO */}
       <Link href={"/"} className="h-full md:hidden">
-        <img src="/logo.png" className="w-full h-full" />
+        <img src="/logo/logo.png" className="w-full h-full" />
       </Link>{" "}
       {/* RIGHT LINKS */}
       <div className="h-full w-auto hidden md:flex gap-4 items-center font-bold">
@@ -38,10 +38,10 @@ const NavBar = () => {
           </Link>
         )}
         <Link href={"/cart"}>
-          <CartIcon up={true} uppercase={true} />
+          <CartIcon up={true} capitalize={true} />
         </Link>
         <Link href={"/"} className="h-full hover:txt-up">
-          <img src="/logo_md.png" className="w-full h-full" />
+          <img src="/logo/logo_md.png" className="w-full h-full" />
         </Link>
       </div>
       <div className="md:hidden">
