@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { CountdownTimeDelta, DeadlineType, calcDate } from "@/utils/calcDate";
 
-const end = new Date("2023-09-09");
+
 const initialState = {
   days: "00",
   hours: "00",
@@ -17,7 +17,7 @@ const CountDown = ({ deadline }: { deadline: DeadlineType }) => {
   const { days, hours, minutes, seconds } = count;
 
   useEffect(() => {
-    const rest = calcDate(end);
+    const rest = calcDate(deadline);
     const interval = setInterval(() => {
       if (!rest) {
         return;
@@ -28,7 +28,7 @@ const CountDown = ({ deadline }: { deadline: DeadlineType }) => {
   }, [count]);
 
   return (
-    <div className="text-2xl md:text-3xl xl:text-4xl text-secondary font-bold">{`${days}:${hours}:${minutes}:${seconds}`}</div>
+    <div className="text-4xl lg:text-5xl xl:text-6xl text-secondary font-bold">{`${days}:${hours}:${minutes}:${seconds}`}</div>
   );
 };
 

@@ -5,24 +5,24 @@ import CountDown from "./CountDown";
 
 const Offer = () => {
   return (
-    <section className="bg-black md:bg-offer-back bg-bottom bg-cover bg-no-repeat h-screen flex flex-col md:flex-row md:justify-between md:h-[80vh] lg:h-screen">
+    <section className="bg-offer-back bg-bottom bg-cover bg-no-repeat min-h-screen flex flex-col xl:flex-row  lg:p-10">
       {/* TEXT CONTAINER */}
-      <div className=" flex flex-1 flex-col center text-center gap-2 md:gap-8 p-6 text-white">
+      <div className=" flex flex-1 flex-col center text-center xl:flex-1 gap-8 p-6 xl:p-10 text-white">
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold ">
           Изысканный бургер с котлетой из мраморной говядины
         </h1>
-        <p className={"text-white text-xl  md:text-2xl xl:text-3xl my-2 " + alegreya.className}>
+        <p className={"text-white text-xl  md:text-2xl lg:text-3xl my-2 md:p-8 " + alegreya.className}>
           Применение инновационных технологий приготовления пищи для сохранения
           качества блюд
         </p>
-        <CountDown />
-        <button className="bg-third w-2/3 p-2 md:p-4 my-4 md:text-2xl rounded-sm ">
+        <CountDown deadline="2023-09-09"/>
+        <button className="bg-third px-4 xs:px-14 lg:px-20 py-2 xs:py-4 lg:py-8 my-4 md:text-2xl lg:text-3xl rounded-sm ">
           Заказать сейчас
         </button>
       </div>
 
       {/* IMAGE CONTAINER */}
-      <div className="relative flex-1 w-full h-auto md:h-full">
+      <div className="relative flex-1 w-full min-h-[350px] md:min-h-[600px]">
         <Image
           src="/offer/offer_burger1.png"
           alt="offer"
