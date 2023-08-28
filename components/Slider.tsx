@@ -11,12 +11,12 @@ const data = [
   },
   {
     id: 2,
-    title: "Удовольствие не только быстро, но и вкусно!",
+    title: "Наслаждение не только быстро, но и вкусно!",
     img: "/slider/slider2.jpg",
   },
   {
     id: 3,
-    title: "FastFlood делает жизнь вкуснее!",
+    title: "FoodFlood делает жизнь вкуснее!",
     img: "/slider/slider3.jpg",
   },
 ];
@@ -44,7 +44,7 @@ const Slider = () => {
         >
           {data[currentSlide].title}
         </h1>
-        <button className="bg-third p-4 px-8 md:text-xl rounded-sm text-white shadow-bx">
+        <button className="bg-third p-4 px-8 md:text-xl rounded-sm text-white shadow-bx hover:opacity-95">
           Заказать сейчас
         </button>
       </div>
