@@ -10,12 +10,14 @@ const config: Config = {
     colors: {
       primary: "#FF5900",
       dark: "#A63A00",
-      secondary: "#FF9000",
+      secondary: "#FF9A00",
       third: "#F60018",
       gray: "#E1E5F7",
+      fourth:'#00B060',
       background: "#575A6B",
       white: "#FFFFFF",
-      black:'#000000'
+      black:'#000000',
+      
     },
 
     extend: {
@@ -27,7 +29,9 @@ const config: Config = {
         'offer-mobile':"url(/offer/offer_mobile.png)",
         'offer-md':"url(/offer/offer_md.png)",
         'offer-back':"url(/offer/offer_background.jpg)",
-      },
+
+      }
+      ,
       boxShadow:{
         'bx':'2px 2px 10px black;'
       },

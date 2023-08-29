@@ -7,7 +7,7 @@ const Offer = () => {
   return (
     <section className="bg-offer-back bg-bottom bg-cover bg-no-repeat min-h-screen flex flex-col xl:flex-row  lg:p-10">
       {/* TEXT CONTAINER */}
-      <div className=" flex flex-1 flex-col center text-center xl:flex-1 gap-8 p-6 xl:p-10 text-white">
+      <div className=" flex flex-1 flex-col center text-center xl:flex-1 gap-8 p-6 xl:p-10 text-white txt-shadow-b">
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold ">
           Изысканный бургер с котлетой из мраморной говядины
         </h1>
@@ -16,7 +16,7 @@ const Offer = () => {
           качества блюд
         </p>
         <CountDown deadline="2023-09-09"/>
-        <button className="bg-third px-4 xs:px-14 lg:px-20 py-2 xs:py-4 lg:py-8 my-4 md:text-2xl lg:text-3xl rounded-sm ">
+        <button className="bg-third px-4 xs:px-14 lg:px-20 py-2 xs:py-4 lg:py-8 my-4 md:text-2xl lg:text-3xl rounded-sm hover:opacity-90">
           Заказать сейчас
         </button>
       </div>

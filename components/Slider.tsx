@@ -38,7 +38,7 @@ const Slider = () => {
       <div className="h-1/2 w-full md:w-1/2 md:h-full center flex-col gap-8 text-primary font-bold">
         <h1
           className={
-            "text-3xl md:text-5xl xl:text-6xl uppercase p-4 md:p-8 text-center  " +
+            "text-3xl txt-shadow-b md:text-5xl xl:text-6xl uppercase p-4 md:p-8 text-center  " +
             alegreya.className
           }
         >

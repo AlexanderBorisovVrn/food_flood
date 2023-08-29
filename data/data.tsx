@@ -110,3 +110,35 @@ export const data: DataType[] | [] = [
     ],
   },
 ];
+
+type MenuType = {
+  id:number;
+  slug:string;
+  title:string;
+  desc?:string;
+  img?:string;
+}
+
+export const menuData = [
+  {
+    id:1,
+  slug:'burgers',
+  title:'Истиные бургеры',
+  desc:'Сочные котлеты, смелые вкусы и изобилие изысканных начинок.',
+  img:'/menu/burgers.jpg',
+  },
+  {
+    id:2,
+  slug:'pizzas',
+  title:'Оригинальная пицца',
+  desc:'Рецепты, от фанатов своего дела.',
+  img:'/menu/pizzas.jpg',
+  },
+  {
+    id:3,
+  slug:'steaks',
+  title:'Сочные стейки',
+  desc:'Мясо от лучших производителей мраморной говядины.',
+  img:'/menu/steaks.jpg',
+  }
+]
