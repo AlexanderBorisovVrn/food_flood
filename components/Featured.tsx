@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import { data } from "@/data/data";
+import { pizzas } from "@/data/data";
 
 const Featured = () => {
-  const products = data.map((product) => {
+  const products = pizzas.map((product) => {
     return (
       <article
         key={product.id}

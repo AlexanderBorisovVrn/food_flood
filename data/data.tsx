@@ -1,4 +1,4 @@
-type DataType = {
+export type Product = {
   id: number;
   title: string;
   desc: string;
@@ -7,12 +7,14 @@ type DataType = {
   options: OptionType[] | [];
 };
 
+export type Products = Product[] | [];
+
 type OptionType = {
   title: string;
   additionalPrice: number;
 };
 
-export const data: DataType[] | [] = [
+export const pizzas: Products = [
   {
     id: 1,
     title: "Гвантанамера",
@@ -87,7 +89,7 @@ export const data: DataType[] | [] = [
   },
   {
     id: 7,
-    title:  "Фриттата",
+    title: "Фриттата",
     desc: 'Пицца "Фриттата" с начинкой из свежих овощей, ветчины, сыра пармезан и зелени, приготовленная по рецепту итальянского омлета.',
     img: "/products/pizza/p7.png",
     price: 550,
@@ -99,7 +101,7 @@ export const data: DataType[] | [] = [
   },
   {
     id: 8,
-    title:  "Капричоза",
+    title: "Капричоза",
     desc: 'Пицца "Капричоза" с выбранными ингредиентами, такими как ветчина, оливки, авокадо, грибы и томаты черри.',
     img: "/products/pizza/p8.png",
     price: 590,
@@ -111,34 +113,92 @@ export const data: DataType[] | [] = [
   },
 ];
 
-type MenuType = {
-  id:number;
-  slug:string;
-  title:string;
-  desc?:string;
-  img?:string;
-}
+export const burgers = [
+  {
+    id: 1,
+    title: "Классический бургер",
+    desc: "Бургер с сочной говяжьей котлетой, свежими овощами и специальным соусом.",
+    img: "/products/burgers/b1.png",
+    price: 350,
+    options: [
+      { title: "Common", additionalPrice: 0 },
+      { title: "Double", additionalPrice: 100 },
+    ],
+  },
+  {
+    id: 2,
+    title: "Чеддер-бургер",
+    desc: "Бургер с говяжьей котлетой и обильным слоем сыра чеддер.",
+    img: "/products/burgers/b2.png",
+    price: 380,
+    options: [
+      { title: "Common", additionalPrice: 0 },
+      { title: "Double", additionalPrice: 100 },
+    ],
+  },
+  {
+    id: 3,
+    title: "BBQ Бургер",
+    desc: 'Бургер "BBQ Бургер" с говяжей котлетой, беконом, луком, сыром и соусом BBQ.',
+    img: "/products/burgers/b3.png",
+    price: 450,
+    options: [
+      { title: "Common", additionalPrice: 0 },
+      { title: "Double", additionalPrice: 150 },
+    ],
+  },
+  {
+    id: 4,
+    title: "Бургер с грибами",
+    desc: "Бургер с говяжьей котлетой, свежими овощами и ароматными шампиньонами.",
+    img: "/products/burgers/b4.png",
+    price: 420,
+    options: [
+      { title: "Common", additionalPrice: 0 },
+      { title: "Double", additionalPrice: 100 },
+    ],
+  },
+  {
+    id: 5,
+    title: "Авокадо Бургер",
+    desc: 'Бургер "Авокадо Бургер" с говяжей котлетой, свежими овощами и авокадо.',
+    img: "/products/burgers/b5.png",
+    price: 420,
+    options: [
+      { title: "Common", additionalPrice: 0 },
+      { title: "Double", additionalPrice: 150 },
+    ],
+  },
+];
 
-export const menuData = [
+type MenuType = {
+  id: number;
+  slug: string;
+  title: string;
+  desc?: string;
+  img?: string;
+};
+
+export const menuData: MenuType[] | [] = [
   {
-    id:1,
-  slug:'burgers',
-  title:'Истиные бургеры',
-  desc:'Сочные котлеты, смелые вкусы и изобилие изысканных начинок.',
-  img:'/menu/burgers.jpg',
+    id: 1,
+    slug: "burgers",
+    title: "Истиные бургеры",
+    desc: "Сочные котлеты, смелые вкусы и изобилие изысканных начинок.",
+    img: "/menu/burgers.jpg",
   },
   {
-    id:2,
-  slug:'pizzas',
-  title:'Оригинальная пицца',
-  desc:'Рецепты, от фанатов своего дела.',
-  img:'/menu/pizzas.jpg',
+    id: 2,
+    slug: "pizzas",
+    title: "Оригинальная пицца",
+    desc: "Рецепты, от фанатов своего дела.",
+    img: "/menu/pizzas.jpg",
   },
   {
-    id:3,
-  slug:'steaks',
-  title:'Сочные стейки',
-  desc:'Мясо от лучших производителей мраморной говядины.',
-  img:'/menu/steaks.jpg',
-  }
-]
+    id: 3,
+    slug: "steaks",
+    title: "Сочные стейки",
+    desc: "Мясо от лучших производителей мраморной говядины.",
+    img: "/menu/steaks.jpg",
+  },
+];
