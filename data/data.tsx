@@ -9,7 +9,7 @@ export type Product = {
 
 export type Products = Product[] | [];
 
-type OptionType = {
+export type OptionType = {
   title: string;
   additionalPrice: number;
 };
