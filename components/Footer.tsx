@@ -7,7 +7,7 @@ const Footer = () => {
       <img src="/logo/logo_md.png" className='h-10 lg:h-20' alt="FoodFlood" />
       FoodFlood&#174;
       </Link>
-      <span>&copy;Все права на контроле</span>
+      <span>&copy; All rights reserved</span>
     </footer>
   )
 }
