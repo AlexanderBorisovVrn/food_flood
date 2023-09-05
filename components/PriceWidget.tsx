@@ -19,10 +19,11 @@ const PriceWidget = ({ price, options }: PriceWidgetType) => {
   const currentPrice = calcPrice(price, additionalPrice, count);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 flex-wrap md:gap-6 xl:gap-10">
       <Price price={currentPrice} />
       <Counter cb={setCount} current={count} />
       <OptionsButtons options={options} cb={setAdditionalPrice} />
+      
     </div>
   );
 };

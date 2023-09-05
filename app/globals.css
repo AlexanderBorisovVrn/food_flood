@@ -41,4 +41,8 @@ body {
    .txt-shadow-w{
     text-shadow:2px 2px 2px rgba(255, 255, 255, 0.705);
    }
+   .txt-shadow-b{
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.7);
+   }
+   
 }

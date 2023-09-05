@@ -9,9 +9,9 @@ type SizeButtonsType = {
 const OptionsButtons = ({ options, cb }: SizeButtonsType) => {
   const [current, setCurrent] = useState<string>(options[0]?.title);
 
-  
-  const styles = "capitalize px-4 py-2 rounded-md border ";
-  const buttons = options.length>0 && options.map(({title,additionalPrice}) => {
+
+  const styles = "capitalize py-2 md:py-4 xl:py-6 rounded-md border w-full text-xl lg:text-2xl 2xl:text-3xl ";
+  const buttons = options.length > 0 && options.map(({ title, additionalPrice }) => {
     return (
       <button
         key={title}
@@ -19,14 +19,13 @@ const OptionsButtons = ({ options, cb }: SizeButtonsType) => {
           setCurrent(title);
           cb(additionalPrice);
         }}
-        // onFocus={}
-        className={title === current ? styles + "bg-third text-white" : styles}
+        className={title === current ? styles + "bg-third text-white ring-1 ring-third" : styles}
       >
         {title}
       </button>
     );
   });
-  return <div className="flex justify-between">{buttons}</div>;
+  return <div className="flex justify-between gap-2 md:gap-4">{buttons}</div>;
 };
 
 export default OptionsButtons;

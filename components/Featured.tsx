@@ -24,7 +24,7 @@ const Featured = () => {
           <h1 className="text-xl md:text-2xl xl:text-3xl mt-2 md:mt-4 xl:mt-8 font-bold uppercase">{product.title}</h1>
           <p className="px-4 py-2 text-center md:text-lg lg:text-xl ">{product.desc}</p>
           <span className="text-xl md:text-2xl xl:text-3xl font-bold">{`₽${product.price}`}</span>
-          <button className="bg-third w-[200px] py-2 px-4 my-4 text-white shadow-bx rounded-sm">
+          <button className="bg-third w-1/2 xl:w-3/4 py-4 px-4 xl:py-6 xl:px-6 my-4 text-white text-lg md:text-xl xl:text-2xl shadow-bx rounded-sm">
             Добавить в корзину
           </button>
         </div>
