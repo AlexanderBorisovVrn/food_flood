@@ -9,7 +9,7 @@ const NavBar = () => {
   const user = false;
   const linkStyle = "hover:txt-up";
   return (
-    <nav className="w-full h-12 text-dark capitalize md:h-20 lg:text-xl xl:text-2xl flex justify-between items-center p-1 lg:px-6 px-4 border-b-2 border-dark bg-white lg:bg-logo bg-no-repeat bg-center">
+    <nav className="w-full h-12 text-dark capitalize md:h-20 lg:text-xl xl:text-2xl 2xl:text-3xl flex justify-between items-center p-1 lg:px-6 px-4 border-b-2 border-dark bg-white lg:bg-logo bg-no-repeat bg-center">
       {/* LEFT LINKS */}
       <div className="hidden md:flex gap-3   font-bold">
         <Link href={"/"} className={linkStyle}>

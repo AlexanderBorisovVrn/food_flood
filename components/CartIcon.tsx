@@ -17,3 +17,4 @@ const CartIcon = ({ up, capitalize }: { up?: boolean; capitalize?: boolean }) =>
 };
 
 export default CartIcon;
+ 
