@@ -4,7 +4,7 @@ const CartPage = () => {
   return (
     <main className='h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col text-primary'>
       {/* PRODUCT CONTAINER */}
-      <section className='h-1/2 p-2 sm:p-4 flex flex-col justify-center overflow-scroll bg-white'>
+      <section className='h-1/2 p-2 sm:p-4 flex flex-col  overflow-scroll bg-white'>
 
         {/* SINGLE ITEM */}
         <div className='object-contain relative flex items-center justify-between mb-4'>
