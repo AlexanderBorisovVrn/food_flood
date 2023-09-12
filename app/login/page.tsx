@@ -15,6 +15,7 @@ const LoginPage = () => {
         <div className='p-10 flex flex-col gap-8'>
           <h1 className='font-bold '>Приветствуем!!</h1>
           <p>Войдите в свой аккаунт или создайте новый</p>
+          <button> Google</button>
         </div>
       </div>
     </main>
