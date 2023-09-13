@@ -12,6 +12,7 @@ const links = [
   { id: 3, title: "Время работы", url: "/" },
   { id: 4, title: "Контакты", url: "/" },
 ];
+
 type LinkType = (typeof links)[0];
 
 const Menu = () => {

@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       primary: "#FF5900",
+      light:'#F5D4B2',
       dark: "#A63A00",
       secondary: "#FF9A00",
       third: "#F60018",
@@ -17,8 +18,9 @@ const config: Config = {
       background: "#575A6B",
       white: "#FFFFFF",
       black:'#000000',
-      green:'#00B358'
-      
+      green:'#00B358',
+      aluminum:'#888B8D',
+      smoke:'#48494A'
     },
 
     extend: {
