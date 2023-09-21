@@ -1,16 +1,28 @@
+import { Products } from "@/types/types";
 import Image from "next/image";
 
-import { pizzas } from "@/data/data";
 
-const Featured = () => {
-  const products = pizzas.map((product) => {
+const getData = async () => {
+  try {
+    const response = await fetch('http://localhost:3000/api/products', {
+      cache: 'no-store'
+    })
+    return response.json();
+  } catch (error) {
+    throw new Error("Error!!!")
+  }
+}
+
+const Featured = async() => {
+  const data:Products = await getData()
+  const products = data.map((product) => {
     return (
       <article
         key={product.id}
         className="w-screen min-h-[60vh] flex flex-col items-center justify-around p-4 hover:bg-gray transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]"
       >
         {/* IMAGE CONTAINER */}
-        <div className="h-[40%] w-full  flex relative hover:rotate-[60deg] transition-all duration-200 ">
+        <div className="h-[40%] w-full  flex relative hover:scale-105 transition-all duration-200 ">
           <Image
             src={product.img}
             fill

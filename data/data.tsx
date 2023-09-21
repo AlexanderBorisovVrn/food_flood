@@ -1,20 +1,6 @@
-export type Product = {
-  id: number;
-  title: string;
-  desc: string;
-  img: string;
-  price: number;
-  options: OptionType[] | [];
-};
 
-export type Products = Product[] | [];
 
-export type OptionType = {
-  title: string;
-  additionalPrice: number;
-};
-
-export const pizzas: Products = [
+export const pizzas = [
   {
     id: 1,
     title: "Гвантанамера",
@@ -171,15 +157,9 @@ export const burgers = [
   },
 ];
 
-type MenuType = {
-  id: number;
-  slug: string;
-  title: string;
-  desc?: string;
-  img?: string;
-};
 
-export const menuData: MenuType[] | [] = [
+
+export const menuData = [
   {
     id: 1,
     slug: "burgers",
