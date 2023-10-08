@@ -1,7 +1,7 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const CartIcon = ({ up, capitalize }: { up?: boolean; capitalize?: boolean }) => {
-  let style = "flex items-center justify-center gap-2 hover:opacity-90 ";
+  let style = "flex items-center justify-center gap-1 hover:opacity-90 ";
   style = up ? style + " " + "hover:txt-up" : style;
   style = capitalize ? style + " " + "capitalize" : style;
 

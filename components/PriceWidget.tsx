@@ -2,8 +2,10 @@
 import React from "react";
 import Price from "./Price";
 import OptionsButtons from "./OptionsButtons";
-import { OptionType, Product } from "@/data/data";
+import { Product } from "@/types/types";
 import Counter from "./Counter";
+
+
 
 const calcPrice = (price: number, additionalPrice: number, count: number) => {
   return (price + additionalPrice) * count;

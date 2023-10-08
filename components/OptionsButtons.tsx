@@ -1,5 +1,5 @@
 "use client";
-import { OptionType } from "@/data/data";
+import {OptionType} from '@/types/types'
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 type SizeButtonsType = {
   options: OptionType[];
